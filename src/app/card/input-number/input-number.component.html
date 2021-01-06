@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="demo-headline" style="padding:0px;">
+      <h1 class="demo-logo">ATM
+        <small>Banca 24 Horas</small>
+      </h1>
+    </div> <!-- /demo-headline -->
+    <div class="row">
+      <div class="col-xs-12" id="screenView">
+        <!-- Place <h1></h1> below -->
+
+        <!-- Replace Video with Animated Gif or Animated SVG -->
+        <div class="row">
+          <div class="col-xs-8 text-center" style="border-right:solid 3px #CCC">
+            <h1 class="demo-section-title text-uppercase text-center">Ingresa tu numero de tarjeta</h1>
+            <input type="text" id="userPinInput" class="form-control text-center" readonly placeholder="1234-5678-9012-3456" [(ngModel)]="card_number"/>
+            <!-- TABLE -->
+            <div id="pinPad">
+              <table>
+                <tr>
+                  <td><a id="btn1" (click)="insertNumber(1)" class="btn btn-block btn-lg btn-inverse">1</a></td>
+                  <td><a id="btn2" (click)="insertNumber(2)" class="btn btn-block btn-lg btn-inverse">2</a></td>
+                  <td><a id="btn3" (click)="insertNumber(3)" class="btn btn-block btn-lg btn-inverse">3</a></td>
+                </tr>
+                <tr>
+                  <td><a id="btn4" (click)="insertNumber(4)" class="btn btn-block btn-lg btn-inverse">4</a></td>
+                  <td><a id="btn5" (click)="insertNumber(5)" class="btn btn-block btn-lg btn-inverse">5</a></td>
+                  <td><a id="btn6" (click)="insertNumber(6)" class="btn btn-block btn-lg btn-inverse">6</a></td>
+                </tr>
+                <tr>
+                  <td><a id="btn7" (click)="insertNumber(7)" class="btn btn-block btn-lg btn-inverse">7</a></td>
+                  <td><a id="btn8" (click)="insertNumber(8)" class="btn btn-block btn-lg btn-inverse">8</a></td>
+                  <td><a id="btn9" (click)="insertNumber(9)" class="btn btn-block btn-lg btn-inverse">9</a></td>
+                </tr>
+                <tr>
+                  <td><a id="btn0" (click)="insertNumber(0)" class="btn btn-block btn-lg btn-inverse">0</a></td>
+                  <td colspan="2"><a id="btnClear" (click)="clear()" class="btn btn-block btn-lg btn-default text-uppercase">Limpiar</a></td>
+                  
+                </tr>
+              </table>
+            </div><!-- // Pin Pad -->
+            
+            <div id="confirmPin">
+              <a (click)="confirm()" class="btn btn-block btn-lg btn-success text-uppercase">Confirmar</a>
+            </div>
+            <div id="cancelTransaction">
+              <a (click)="cancel()" class="btn btn-block btn-lg btn-danger text-uppercase"><span class="fui-cross"></span> Cancelar</a>
+            </div><!-- // Pin Pad -->
+          </div> 
+
+
+          <div class="col-xs-4">
+            <div style="margin-top:8rem;">
+              <img src="../../../assets/img/InsertCardAnimate.gif" style="width:16em;"/>
+            </div>
+          </div><!-- /.col-xs-4 -->
+
+          
+        </div><!-- // END login screen  -->
+    </div><!--  // END column-->
+</div><!-- // END row-->
+
+    
+
+
+  </div> <!-- /container -->

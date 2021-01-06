@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="demo-headline" style="padding:0px;">
+        <h1 class="demo-logo">ATM
+            <small>Banca 24 Horas</small>
+        </h1>
+    </div> <!-- /demo-headline -->
+    <div class="row">
+        <div class="col-xs-12" id="screenView">
+            <!-- Place <h1></h1> below -->
+            <h1 class="demo-section-title text-uppercase text-center">Options</h1>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="tile" (click)="withdraw()">
+                        <img src="../../../assets/img/quick_cash.png" alt="Quick Cash" class="tile-image big-illustration">
+                        <h3 class="tile-title">Retiro</h3>
+                        <p>Podras retirar dinero en efectivo del disponible en tu cuenta.</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="tile" (click)="account_detail()">
+                        <img src="../../../assets/img/accounts_checklist.png" alt="Accounts" class="tile-image">
+                        <h3 class="tile-title">Balance</h3>
+                        <p>Podras ver el resumen de movimientos y el saldo en tu cuenta.</p>
+                    </div>
+                </div>
+            </div> <!-- // END OPTIONS-->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="tile">
+                        <a id="cancelTransactin" (click)="cancel()" class="btn btn-lg btn-danger text-uppercase btn-padding"><span
+                                class="fui-cross"></span> Cancel</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!--  // END column-->
+
+    </div><!-- // END row-->
+
+
+
+
+</div> <!-- /container -->
